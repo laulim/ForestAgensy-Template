@@ -81,6 +81,14 @@ html {
 body {
   font-family: 'Lato', sans-serif;
 }
+.container {
+  width: 1174px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.section {
+  margin-top: 50px;
+}
 .block {
   background-color: #BCDB3E;
   padding: 20px;
@@ -91,20 +99,10 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.header-bg {
-  background-color: #4b5c34;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 .form-bg {
   background-color: #e7eef2;
   padding-top: 20px;
   padding-bottom: 20px;
-}
-.footer {
-  background: #352222;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 .footer-bg {
   background-color: #141a20;
@@ -313,4 +311,81 @@ body {
 .header__subtitle {
   font-size: 18px;
   letter-spacing: 1px;
+}
+/* ==========================================================================
+   BLOG
+   ========================================================================== */
+.blog-wrap {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.blog-item {
+  position: relative;
+}
+.blog-item__link {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  top: 6px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=0);
+  /* IE6-9 */
+}
+.blog-item__post {
+  position: absolute;
+  bottom: 30px;
+  padding-left: 26px;
+  padding-right: 126px;
+  font-family: 'PT Sans', sans-serif;
+  color: #fff;
+}
+.blog-item__post h3 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.blog-item__post .post__data {
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 10px;
+}
+.blog-item__post .post__data--date:before {
+  display: inline-block;
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/icons/time-icon.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  margin-right: 10px;
+}
+.blog-item__post .post__data--comments:before {
+  display: inline-block;
+  content: '';
+  width: 16px;
+  height: 14px;
+  background-image: url("../img/icons/message-icon.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  margin-right: 10px;
+}
+.blog-item__img {
+  height: 300px;
+  min-width: auto;
+  margin-bottom: 20px;
 }

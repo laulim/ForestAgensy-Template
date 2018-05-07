@@ -1,0 +1,84 @@
+/* ==========================================================================
+   BLOG
+   ========================================================================== */
+
+.blog-wrap {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.blog-item {
+	position: relative;
+}
+
+.blog-item__link {
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 30px;
+	top: 6px;
+	//margin: 6px 0 7px;
+		
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+}
+
+.blog-item__post {
+	position: absolute;
+	bottom: 30px;
+	padding-left: 26px;
+	padding-right: 126px;
+	font-family: 'PT Sans', sans-serif;
+	color: #fff;
+
+	h3 {
+		font-size: 24px;
+		font-weight: 700;
+		letter-spacing: 1px;
+	}
+
+	.post__data {
+		display: inline-block;
+		font-size: 12px;
+		margin-right: 10px;
+
+		&--date:before {
+			display: inline-block;
+			content: '';
+			width: 12px;
+			height: 12px;
+			background-image: url("../img/icons/time-icon.png");
+			background-repeat: no-repeat;
+			-webkit-background-size: cover;
+			background-size: cover;
+			margin-right: 10px;
+		}
+
+		&--comments:before {
+			display: inline-block;
+			content: '';
+			width: 16px;
+			height: 14px;
+			background-image: url("../img/icons/message-icon.png");
+			background-repeat: no-repeat;
+			-webkit-background-size: cover;
+			background-size: cover;
+			margin-right: 10px;
+		}
+	}
+}
+
+.blog-item__img {
+	height: 300px;
+	min-width: auto;
+	margin-bottom: 20px;
+}
