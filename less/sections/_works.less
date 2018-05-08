@@ -1,0 +1,80 @@
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
+
+.works-item {
+	position: relative;
+	padding: 0;
+	overflow: hidden;
+}
+
+.works-item__img {
+	width: 100%;
+}
+
+.works-item__hover {
+	// padding-top: 85px;
+	padding-right: 27px;
+	padding-left: 27px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 2px;
+	background-color: rgba(0, 0, 0, 0.5);
+
+	//display: none;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s, visibility 0s linear 0.5s;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	p {
+		color: #fff;
+		font-size: 14px;
+		text-align: center;
+	}
+}
+
+.works-item:hover .works-item__hover {
+	//display: block;
+	opacity: 1;
+	visibility: visible;
+	transition-delay: 0s;
+}
+
+.button-share {
+	width: 80px;
+	height: 30px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	cursor: pointer;
+
+	img {
+		width: 30px;
+		height: 30px;
+		margin-right: 10px;
+		float: left;
+	}
+
+	span {
+		display: block;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 10px;
+		float: left;
+		margin-top: 8px;
+	}
+}

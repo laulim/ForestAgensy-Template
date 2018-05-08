@@ -10,10 +10,9 @@
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700|Open+Sans|PT+Sans+Caption:700|PT+Sans+Narrow:400,700|PT+Sans:400,700|Roboto:400,500" rel="stylesheet"> 
 
+
 	<!-- 
-
-    
-
+ 
     font-family: 'Lato', sans-serif;
 
     font-family: 'Montserrat', sans-serif;
@@ -28,13 +27,11 @@
 
     font-family: 'Roboto', sans-serif;
 
-
-
  -->
 
 	<!-- Syles -->
 	<link rel="stylesheet" href="libs/normalize/normalize.css">
-	<!-- <link rel="stylesheet" href="libs/bootstrap-4-grid/bootstrap-grid.min.css"> -->
+	<link rel="stylesheet" href="libs/bootstrap-4-grid/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="css/main.css">
 
 	<!-- FavIcons -->
@@ -52,7 +49,7 @@
 <body>
 
 	<!-- HEADER -->
-	<header class="header-bg">
+	<header id="top" class="header-bg">
 		<!-- MENU -->
 		<div id="menu" class="menu-wrap">
 			<div class="container menu">
@@ -63,11 +60,11 @@
 				<!-- NAVIGATION -->
 				<nav class="navigation">
 					<ul class="navigation__list">
-						<li class="navigation__item"><a class="navigation__link" href="#">home</a></li>
-						<li class="navigation__item"><a class="navigation__link" href="#">blog</a></li>
-						<li class="navigation__item"><a class="navigation__link" href="#">our services</a></li>
-						<li class="navigation__item"><a class="navigation__link" href="#">team</a></li>
-						<li class="navigation__item"><a class="navigation__link" href="#">contact</a></li>
+						<li class="navigation__item"><a class="navigation__link" href="#top">home</a></li>
+						<li class="navigation__item"><a class="navigation__link" href="#blog">blog</a></li>
+						<li class="navigation__item"><a class="navigation__link" href="#services">our services</a></li>
+						<li class="navigation__item"><a class="navigation__link" href="#team">team</a></li>
+						<li class="navigation__item"><a class="navigation__link" href="#contact">contact</a></li>
 					</ul>
 				</nav>
 				<!-- // NAVIGATION -->
@@ -86,7 +83,7 @@
 			</div>
 		</div>
 		<!-- mouse-scroll -->
-		<a href="#" id="mouse-scroll">
+		<a href="#blog" id="mouse-scroll" rel='m_PageScroll2id'>
 		    <div class="mouse">
 		        <div class="mouse-in"></div>
 		    </div>
@@ -99,143 +96,169 @@
 	<!-- // HEADER -->
 
 	<!-- BLOG -->
-	<div class="container container--m-t-50">
-		<div class="blog-wrap">
-			<div class="blog-item">
-				<a href="img/images/blog/blog01.jpg" target="_blank" class="blog-item__link">
-					<div class="blog-item__post">
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-						<span class="post__data post__data--date">24 April 2017</span>
-						<span class="post__data post__data--comments">COMMENTS</span>
-						<span class="post__data post__data--commrnts-num">(13 783)</span>
-					</div>
-				</a>
-				<img class="blog-item__img" src="img/images/blog/blog01.jpg" alt="Forest">
+	<div id="blog" class="container section--p-t-50">
+		<div class="row">
+			<div class="col-md-7">
+				<div class="blog-item">
+					<a href="img/images/blog/blog01.jpg" target="_blank" class="blog-item__link">
+						<div class="blog-item__post">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+							<span class="post__data post__data--date">24 April 2017</span>
+							<span class="post__data post__data--comments">COMMENTS</span>
+							<span class="post__data post__data--commrnts-num">(13 783)</span>
+						</div>
+					</a>
+					<img class="blog-item__img" src="img/images/blog/blog01.jpg" alt="Forest">
+				</div>
 			</div>
 
-			<div class="blog-item">
-				<a href="img/images/blog/blog02.jpg" target="_blank" class="blog-item__link">
-					<div class="blog-item__post">
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-						<span class="post__data post__data--date">24 April 2017</span>
-						<span class="post__data post__data--comments">COMMENTS</span>
-						<span class="post__data post__data--commrnts-num">(13 783)</span>
-					</div>
-				</a>
-				<img class="blog-item__img" src="img/images/blog/blog02.jpg" alt="Forest">
+			<div class="col-md-5">
+				<div class="blog-item">
+					<a href="img/images/blog/blog02.jpg" target="_blank" class="blog-item__link">
+						<div class="blog-item__post">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+							<span class="post__data post__data--date">24 April 2017</span>
+							<span class="post__data post__data--comments">COMMENTS</span>
+							<span class="post__data post__data--commrnts-num">(13 783)</span>
+						</div>
+					</a>
+					<img class="blog-item__img" src="img/images/blog/blog02.jpg" alt="Forest">
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-5">
+				<div class="blog-item">
+					<a href="img/images/blog/blog04.jpg" target="_blank" class="blog-item__link">
+						<div class="blog-item__post">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+							<span class="post__data post__data--date">24 April 2017</span>
+							<span class="post__data post__data--comments">COMMENTS</span>
+							<span class="post__data post__data--commrnts-num">(13 783)</span>
+						</div>
+					</a>
+					<img class="blog-item__img" src="img/images/blog/blog04.jpg" alt="Forest">
+				</div>
 			</div>
 
-			<div class="blog-item">
-				<a href="img/images/blog/blog04.jpg" target="_blank" class="blog-item__link">
-					<div class="blog-item__post">
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-						<span class="post__data post__data--date">24 April 2017</span>
-						<span class="post__data post__data--comments">COMMENTS</span>
-						<span class="post__data post__data--commrnts-num">(13 783)</span>
-					</div>
-				</a>
-				<img class="blog-item__img" src="img/images/blog/blog04.jpg" alt="Forest">
-			</div>
-
-			<div class="blog-item">
-				<a href="img/images/blog/blog03.jpg" target="_blank" class="blog-item__link">
-					<div class="blog-item__post">
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-						<span class="post__data post__data--date">24 April 2017</span>
-						<span class="post__data post__data--comments">COMMENTS</span>
-						<span class="post__data post__data--commrnts-num">(13 783)</span>
-					</div>
-				</a>
-				<img class="blog-item__img" src="img/images/blog/blog03.jpg" alt="Forest">
+			<div class="col-md-7">
+				<div class="blog-item">
+					<a href="img/images/blog/blog03.jpg" target="_blank" class="blog-item__link">
+						<div class="blog-item__post">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+							<span class="post__data post__data--date">24 April 2017</span>
+							<span class="post__data post__data--comments">COMMENTS</span>
+							<span class="post__data post__data--commrnts-num">(13 783)</span>
+						</div>
+					</a>
+					<img class="blog-item__img" src="img/images/blog/blog03.jpg" alt="deer">
+				</div>
 			</div>
 		</div>
 	</div>
 	<!-- // BLOG -->
 
 	<!-- SERVICES -->
-	<div class="container container--m-t-30">
+	<div id="services" class="container section--p-t-30">
 		<div class="heading">our services</div>
 		<!-- Service-row -->
-		<div class="service-row">
+		<div class="row service-row">
 			<!-- Service-item -->
-			<div class="service-item">
-				<img class="service-item__img" src="img/icons/icon01.png" alt="comp-icon">
-				<div class="service-item__title">Lorem ipsum</div>
-				<div class="service-item__desc">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<div class="col-md-3">
+				<div class="service-item">
+					<img class="service-item__img" src="img/icons/icon01.png" alt="comp-icon">
+					<div class="service-item__title">Lorem ipsum</div>
+					<div class="service-item__desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
 				</div>
 			</div>
 			<!-- Service-item -->
 
 			<!-- Service-item -->
-			<div class="service-item">
-				<img class="service-item__img" src="img/icons/icon02.png" alt="time-icon">
-				<div class="service-item__title">Lorem ipsum</div>
-				<div class="service-item__desc">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<div class="col-md-3">
+				<div class="service-item">
+					<img class="service-item__img" src="img/icons/icon02.png" alt="time-icon">
+					<div class="service-item__title">Lorem ipsum</div>
+					<div class="service-item__desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
 				</div>
 			</div>
 			<!-- Service-item -->
 
 			<!-- Service-item -->
-			<div class="service-item">
-				<img class="service-item__img" src="img/icons/icon03.png" alt="planet-icon">
-				<div class="service-item__title">Lorem ipsum</div>
-				<div class="service-item__desc">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<div class="col-md-3">
+				<div class="service-item">
+					<img class="service-item__img" src="img/icons/icon03.png" alt="planet-icon">
+					<div class="service-item__title">Lorem ipsum</div>
+					<div class="service-item__desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
 				</div>
 			</div>
 			<!-- Service-item -->
 
 			<!-- Service-item -->
-			<div class="service-item">
-				<img class="service-item__img" src="img/icons/icon04.png" alt="phone-icon">
-				<div class="service-item__title">Lorem ipsum</div>
-				<div class="service-item__desc">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<div class="col-md-3">
+				<div class="service-item">
+					<img class="service-item__img" src="img/icons/icon04.png" alt="phone-icon">
+					<div class="service-item__title">Lorem ipsum</div>
+					<div class="service-item__desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
 				</div>
 			</div>
 			<!-- Service-item -->
 		</div>
 		<!-- // Service-row -->
 		<!-- Service-row -->
-		<div class="service-row">
+		<div class="row service-row">
 			<!-- Service-item -->
-			<div class="service-item">
-				<img class="service-item__img" src="img/icons/icon01.png" alt="comp-icon">
-				<div class="service-item__title">Lorem ipsum</div>
-				<div class="service-item__desc">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<div class="col-md-3">
+				<div class="service-item">
+					<img class="service-item__img" src="img/icons/icon01.png" alt="comp-icon">
+					<div class="service-item__title">Lorem ipsum</div>
+					<div class="service-item__desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
 				</div>
 			</div>
 			<!--// Service-item -->
 
 			<!-- Service-item -->
-			<div class="service-item">
-				<img class="service-item__img" src="img/icons/icon02.png" alt="time-icon">
-				<div class="service-item__title">Lorem ipsum</div>
-				<div class="service-item__desc">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<div class="col-md-3">
+				<div class="service-item">
+					<img class="service-item__img" src="img/icons/icon02.png" alt="time-icon">
+					<div class="service-item__title">Lorem ipsum</div>
+					<div class="service-item__desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
 				</div>
 			</div>
 			<!--// Service-item -->
 
 			<!-- Service-item -->
-			<div class="service-item">
-				<img class="service-item__img" src="img/icons/icon03.png" alt="planet-icon">
-				<div class="service-item__title">Lorem ipsum</div>
-				<div class="service-item__desc">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<div class="col-md-3">
+				<div class="service-item">
+					<img class="service-item__img" src="img/icons/icon03.png" alt="planet-icon">
+					<div class="service-item__title">Lorem ipsum</div>
+					<div class="service-item__desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
 				</div>
 			</div>
 			<!--// Service-item -->
 
 			<!-- Service-item -->
-			<div class="service-item">
-				<img class="service-item__img" src="img/icons/icon04.png" alt="phone-icon">
-				<div class="service-item__title">Lorem ipsum</div>
-				<div class="service-item__desc">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<div class="col-md-3">
+				<div class="service-item">
+					<img class="service-item__img" src="img/icons/icon04.png" alt="phone-icon">
+					<div class="service-item__title">Lorem ipsum</div>
+					<div class="service-item__desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
 				</div>
 			</div>
 			<!--// Service-item -->
@@ -245,13 +268,76 @@
 	<!-- // SERVICES -->
 
 	<!-- WORKS -->
-	<div class="block">
-		WORKS
+	<div class="row">
+		<!-- Works-item -->
+		<div class="col-md-3 works-item">
+			<div class="works-item__hover">
+				<div class="heading heading--less-lite">
+					Lorem ipsum
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+				<div class="button-share">
+					<img src="img/icons/share-icon.png" alt="share"> 
+					<span>share</span>
+				</div>
+			</div>
+			<img class="works-item__img" src="img/images/works/work4.jpg" alt="work4">
+		</div>
+		<!--// Works-item -->
+
+		<!-- Works-item -->
+		<div class="col-md-3 works-item">
+			<div class="works-item__hover">
+				<div class="heading heading--less-lite">
+					Lorem ipsum
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+				<div class="button-share">
+					<img src="img/icons/share-icon.png" alt="share"> 
+					<span>share</span>
+				</div>
+			</div>
+			<img class="works-item__img" src="img/images/works/work3.jpg" alt="work3">
+		</div>
+		<!--// Works-item -->
+
+		<!-- Works-item -->
+		<div class="col-md-3 works-item">
+			<div class="works-item__hover">
+				<div class="heading heading--less-lite">
+					Lorem ipsum
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+				<div class="button-share">
+					<img src="img/icons/share-icon.png" alt="share"> 
+					<span>share</span>
+				</div>
+			</div>
+			<img class="works-item__img" src="img/images/works/work2.jpg" alt="work2">
+		</div>
+		<!--// Works-item -->
+
+		<!-- Works-item -->
+		<div class="col-md-3 works-item">
+			<div class="works-item__hover">
+				<div class="heading heading--less-lite">
+					Lorem ipsum
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+				<div class="button-share">
+					<img src="img/icons/share-icon.png" alt="share"> 
+					<span>share</span>
+				</div>
+			</div>
+			<img class="works-item__img" src="img/images/works/work1.jpg" alt="work1">
+		</div>
+		<!--// Works-item -->
+
 	</div>
 	<!-- // WORKS -->
 
 	<!-- TEAM -->
-	<div class="container">
+	<div id="team" class="container">
 		<div class="block">
 			TEAM
 		</div>
@@ -259,7 +345,7 @@
 	<!-- // TEAM -->
 
 	<!-- CONTACT-FORM -->
-	<div class="form-bg">
+	<div id="contact" class="form-bg">
 		<div class="container">
 			<div class="block">
 				CONTACT-FORM
@@ -282,6 +368,8 @@
 
 	<!-- Scripts -->
 	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
+	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
+
 	<script src="js/main.js"></script>
 
 </body>
