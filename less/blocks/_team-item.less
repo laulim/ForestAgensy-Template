@@ -26,27 +26,30 @@
 
 	opacity: 0;
 	visibility: hidden;
-	transition: opacity 0.5s, visibility 0s linear 0.5s;
+	transition: opacity 0.5s ease-in, visibility 0s linear 0.5s;
 
 	a {
 		text-decoration: none;
-	}
-
-	img {
+		font-size: 22px;
 		position: absolute;
+		color: #fff;
+
+		&:hover {
+			color: #dfff2e;
+		}
 	}
 	
 	.h-facebook {
-		bottom: 47px;
-		left: 47px;
+		bottom: 42px;
+		left: 42px;
 	}
 	.h-twitter {
-		left: 98px;
-		bottom: 27px;
+		left: 91px;
+		bottom: 24px;
 	}
 	.h-insta {
-		bottom: 47px;
-		right: 47px;
+		bottom: 42px;
+		right: 42px;
 	}
 }
 

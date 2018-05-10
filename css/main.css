@@ -194,6 +194,7 @@ p {
 .navigation--less {
   text-align: center;
   font-size: 13px;
+  letter-spacing: 0;
 }
 .navigation__list {
   margin: 0;
@@ -332,26 +333,29 @@ p {
   right: 0;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity 0.5s, visibility 0s linear 0.5s;
-  transition: opacity 0.5s, visibility 0s linear 0.5s;
+  -webkit-transition: opacity 0.5s ease-in, visibility 0s linear 0.5s;
+  transition: opacity 0.5s ease-in, visibility 0s linear 0.5s;
 }
 .team-item__image__hover a {
   text-decoration: none;
-}
-.team-item__image__hover img {
+  font-size: 22px;
   position: absolute;
+  color: #fff;
+}
+.team-item__image__hover a:hover {
+  color: #dfff2e;
 }
 .team-item__image__hover .h-facebook {
-  bottom: 47px;
-  left: 47px;
+  bottom: 42px;
+  left: 42px;
 }
 .team-item__image__hover .h-twitter {
-  left: 98px;
-  bottom: 27px;
+  left: 91px;
+  bottom: 24px;
 }
 .team-item__image__hover .h-insta {
-  bottom: 47px;
-  right: 47px;
+  bottom: 42px;
+  right: 42px;
 }
 .team-item__image:hover .team-item__image__hover {
   opacity: 1;
@@ -444,6 +448,11 @@ p {
   width: 100%;
   height: 286px;
   margin-bottom: 20px;
+  overflow: hidden;
+}
+.blog-item:hover .blog-item__img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .blog-item__link {
   display: block;
@@ -452,6 +461,7 @@ p {
   right: 0;
   bottom: 7px;
   top: 6px;
+  z-index: 5;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
   /* FF3.6-15 */
   /* Chrome10-25,Safari5.1-6 */
@@ -515,6 +525,8 @@ p {
 .blog-item__img {
   width: 100%;
   height: 100%;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
 }
 /* ==========================================================================
    SERVICES
@@ -565,8 +577,8 @@ p {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity 0.5s, visibility 0s linear 0.5s;
-  transition: opacity 0.5s, visibility 0s linear 0.5s;
+  -webkit-transition: opacity 0.5s ease-in, visibility 0s linear 0.5s;
+  transition: opacity 0.5s ease-in, visibility 0s linear 0.5s;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -604,7 +616,7 @@ p {
   cursor: pointer;
 }
 .button-share img {
-  width: 30px;
+  width: 30px !important;
   height: 30px;
   margin-right: 10px;
   float: left;
@@ -729,11 +741,17 @@ label.error:after {
 }
 .social-icons {
   margin-top: 30px;
+  font-family: 'fontello';
 }
 .social-icons a {
-  margin-right: 30px;
+  margin-right: 20px;
   text-decoration: none;
+  color: #fff;
+  font-size: 32px;
 }
 .social-icons a:last-child {
   margin-right: 0;
+}
+.social-icons a:hover {
+  color: #dfff2e;
 }
