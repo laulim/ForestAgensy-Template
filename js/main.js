@@ -6,12 +6,23 @@ $(document).ready(function() {
 	    highlightSelector:"nav a"
 	});
 
-	
-//owl.carousel.2
+// jQuery Validate JS
+	$('#contact-form').validate({
+		rules: {
+			name: {required: true},
+			email: {required: true, email: true},
+			message: {required: true}
+		},
 
-	// $(".owl-carousel").owlCarousel({
-	// 	items: 4,
-	// });
+		messages: {
+			name: "Enter your full name",
+			email: {
+				required: "Enter your email",
+				email: "Enter a valid email address",
+			},
+			message: "Enter your message",
+		}
+	});
 
 
 });

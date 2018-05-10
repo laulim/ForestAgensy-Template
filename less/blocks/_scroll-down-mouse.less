@@ -12,6 +12,20 @@
     z-index: 9999;
     text-decoration: none;
     text-align: center;
+
+    &:hover {
+        .mouse {
+           border: 1px solid #dfff2e; 
+        }
+
+        .mouse-in {
+            background: #dfff2e;
+        }
+
+        .mouse-scroll-down {
+            color: #dfff2e;
+        } 
+    }
 }
 
 #mouse-scroll .mouse {
@@ -24,6 +38,8 @@
     border: 1px solid #ffffff;
     margin-right: auto;
     margin-left: auto;
+
+    transition: border 0.3s;
 }
 
 #mouse-scroll .mouse-in {
@@ -34,6 +50,7 @@
     background: #ffffff;
     position: relative;
     -webkit-animation: animated-mouse 1.2s ease infinite;
+    transition: background 0.3s;
 }
 
 #mouse-scroll .mouse-scroll-down {
@@ -43,6 +60,8 @@
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin-top: 10px;
+    
+    transition: color 0.3s;
 }
 
 @-webkit-keyframes animated-mouse {

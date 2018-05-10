@@ -1,0 +1,81 @@
+/* ==========================================================================
+   TEAM-ITEM
+   ========================================================================== */
+
+.team-item {
+	
+}
+
+.team-item__image {
+	width: 213px;
+	height: 213px;
+	border-radius: 213px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.team-item__image__hover {
+	background-color: rgba(16, 19, 28, 0.65);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s, visibility 0s linear 0.5s;
+
+	a {
+		text-decoration: none;
+	}
+
+	img {
+		position: absolute;
+	}
+	
+	.h-facebook {
+		bottom: 47px;
+		left: 47px;
+	}
+	.h-twitter {
+		left: 98px;
+		bottom: 27px;
+	}
+	.h-insta {
+		bottom: 47px;
+		right: 47px;
+	}
+}
+
+.team-item__image:hover .team-item__image__hover {
+	opacity: 1;
+	visibility: visible;
+	transition-delay: 0s;
+}
+
+.team-item__name {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	color: #324953;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.team-item__prof {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 14px;
+	color: #afbfc6;
+	text-align: center;
+}
+
+.team-item__desc {
+	font-size: 12px;
+	line-height: 26px;
+	color: #72848c;
+	text-align: center;
+	margin-top: 10px;
+}

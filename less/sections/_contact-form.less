@@ -1,0 +1,113 @@
+/* ==========================================================================
+   WORKS
+   ========================================================================== */
+
+
+.form-bg {
+	background-color: #e7eef2;
+	padding-top: 73px;
+	padding-bottom: 114px;
+	background-image: url("../img/bg/contact-bg.png");
+	background-repeat: no-repeat;
+	background-position: right bottom -35%;
+
+}
+
+.contact-form {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+
+.contact-form__wrap-left {
+	padding-right: 8px;
+}
+
+.contact-form__input {
+	width: 100%;
+	color: #556369;
+	margin-bottom: 25px;
+	padding-left: 25px;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	border-radius: 5px;
+	border: 1px solid #dee7eb;
+	border-color: #dee7eb;
+	outline:none;
+
+	transition: border-color 0.3s;
+
+	&--last {
+		margin-bottom: 70px;
+	}
+
+	&:active, &:hover, &:focus {
+		outline:none;
+		border-color: #72848c;
+	}
+
+}
+
+.contact-form__textarea {
+	width: 100%;
+	height: 100%;
+	color: #556369;
+	padding-left: 25px;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	border-radius: 5px;
+	border: 1px solid #dee7eb;
+	border-color: #dee7eb;
+	outline:none;
+
+	transition: border-color 0.3s;
+
+	&:active, &:hover, &:focus {
+		outline:none;
+		border-color: #72848c;
+	}
+}
+
+.contact-form__submit {
+	width: 100%;
+	color: #fff;
+	padding-top: 20px;
+	padding-bottom: 17px;
+	background-color: #141a20;
+	border-radius: 5px;
+	border: 1px solid #000;
+	// outline:none;
+	border: none;
+
+	transition: 0.3s;
+
+	&:active, &:hover, &:focus {
+		background-color: #72848c;
+		color: #141a20;
+	}
+
+}
+
+label.error {
+	background-color: rgba(138, 65, 65, 0.5);
+	//display: block;
+	border-radius: 8px;
+	color: #fff;
+	padding: 5px 15px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	margin-top: -5px;
+	position: relative;
+
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: 100%;
+		left: 40px;
+		margin-left: -10px;
+		width: 0;
+		height: 0;
+		border-bottom: 10px solid rgba(138, 65, 65, 0.5);;
+		border-right: 10px solid transparent;
+		border-left: 10px solid transparent;
+	}
+}
