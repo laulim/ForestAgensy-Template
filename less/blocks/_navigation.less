@@ -40,9 +40,10 @@
 	text-decoration: none;
 	text-transform: uppercase;
 
-	&:hover {
-		color: #dfff2e;
+	&:hover, &:active, &:focus {
+		color: @hover-color;
 		text-decoration: none;
+		outline:none;
 	}
 }
 

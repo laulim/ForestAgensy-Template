@@ -43,6 +43,11 @@
 		font-size: 14px;
 		text-align: center;
 	}
+
+	&:hover, &:active, &:focus {
+		text-decoration: none;
+	}
+
 }
 
 .works-item:hover .works-item__hover {
@@ -50,15 +55,22 @@
 	opacity: 1;
 	visibility: visible;
 	transition-delay: 0s;
+
+	.button-share span {
+		color: @hover-color;
+		&:before {
+			background-image: url('../img/icons/share-icon-h.png');
+		}
+	}
+
 }
 
 .button-share {
-	width: 80px;
+	width: 73px;
 	height: 30px;
 	margin-right: auto;
 	margin-left: auto;
 	text-align: center;
-	cursor: pointer;
 
 	img {
 		width: 30px !important;
@@ -72,7 +84,25 @@
 		color: #fff;
 		text-transform: uppercase;
 		font-size: 10px;
-		float: left;
+		//float: left;
 		margin-top: 8px;
+		padding-top: 8px;
+		text-align: right;
+		position: relative;
+
+		&:before {
+			content: '';
+			background-image: url('../img/icons/share-icon.png');
+			background-repeat: no-repeat;
+			-webkit-background-size: cover;
+			background-size: cover;
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+		}
 	}
+
 }

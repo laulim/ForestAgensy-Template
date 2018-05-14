@@ -133,16 +133,6 @@ p {
   left: 0;
   right: 0;
 }
-.menu-wrap--fixed {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  z-index: 999;
-  background-color: rgba(20, 26, 32, 0.8);
-}
 .menu {
   display: -moz-flex;
   display: -ms-flex;
@@ -171,9 +161,12 @@ p {
   text-decoration: none;
   text-transform: uppercase;
 }
-.logo:hover {
+.logo:hover,
+.logo:active,
+.logo:focus {
   text-decoration: none;
   color: #fff;
+  outline: none;
 }
 .logo--less {
   font-size: 24px;
@@ -218,9 +211,12 @@ p {
   text-decoration: none;
   text-transform: uppercase;
 }
-.navigation__link:hover {
+.navigation__link:hover,
+.navigation__link:active,
+.navigation__link:focus {
   color: #dfff2e;
   text-decoration: none;
+  outline: none;
 }
 /* ==========================================================================
    SCROLL-DOWN-MOUSE
@@ -342,7 +338,9 @@ p {
   position: absolute;
   color: #fff;
 }
-.team-item__image__hover a:hover {
+.team-item__image__hover a:hover,
+.team-item__image__hover a:active,
+.team-item__image__hover a:focus {
   color: #dfff2e;
 }
 .team-item__image__hover .h-facebook {
@@ -436,7 +434,7 @@ p {
   line-height: 1.2;
   margin: 0 0 20px;
 }
-.header__subtitle {
+.header__subtitle p {
   font-size: 18px;
   letter-spacing: 1px;
 }
@@ -459,7 +457,7 @@ p {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 7px;
+  bottom: 0;
   top: 6px;
   z-index: 5;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
@@ -471,12 +469,21 @@ p {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=0);
   /* IE6-9 */
 }
+.blog-item__link:hover .blog-item__post {
+  color: #dfff2e;
+}
+.blog-item__link:hover .blog-item__post .post__data--date:before {
+  background-image: url("../img/icons/time-icon-h.png");
+}
+.blog-item__link:hover .blog-item__post .post__data--comments:before {
+  background-image: url("../img/icons/message-icon-h.png");
+}
 .blog-item__post {
   position: absolute;
   bottom: 30px;
   padding-left: 26px;
-  padding-right: 126px;
-  font-family: 'PT Sans Narrow', sans-serif;
+  padding-right: 100px;
+  font-family: 'PT Sans', sans-serif;
   color: #fff;
 }
 .blog-item__post h3 {
@@ -486,8 +493,10 @@ p {
   margin-bottom: 15px;
 }
 .blog-item__post .post__data {
+  font-family: 'PT Sans Narrow', sans-serif;
   display: inline-block;
   font-size: 12px;
+  letter-spacing: 1px;
   position: relative;
 }
 .blog-item__post .post__data--date {
@@ -522,6 +531,9 @@ p {
   bottom: 0px;
   left: -26px;
 }
+.blog-item__post .post__data--comments-num {
+  font-family: 'Open Sans', sans-serif;
+}
 .blog-item__img {
   width: 100%;
   height: 100%;
@@ -535,7 +547,6 @@ p {
   margin-bottom: 50px;
 }
 .service-item {
-  width: 247px;
   padding-left: 50px;
   position: relative;
 }
@@ -553,6 +564,9 @@ p {
 }
 .service-item__desc {
   color: #72848c;
+}
+.service-item__desc p {
+  line-height: normal;
 }
 /* ==========================================================================
    WORKS
@@ -601,19 +615,29 @@ p {
   font-size: 14px;
   text-align: center;
 }
+.works-item__hover:hover,
+.works-item__hover:active,
+.works-item__hover:focus {
+  text-decoration: none;
+}
 .works-item:hover .works-item__hover {
   opacity: 1;
   visibility: visible;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
+.works-item:hover .works-item__hover .button-share span {
+  color: #dfff2e;
+}
+.works-item:hover .works-item__hover .button-share span:before {
+  background-image: url('../img/icons/share-icon-h.png');
+}
 .button-share {
-  width: 80px;
+  width: 73px;
   height: 30px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  cursor: pointer;
 }
 .button-share img {
   width: 30px !important;
@@ -626,8 +650,22 @@ p {
   color: #fff;
   text-transform: uppercase;
   font-size: 10px;
-  float: left;
   margin-top: 8px;
+  padding-top: 8px;
+  text-align: right;
+  position: relative;
+}
+.button-share span:before {
+  content: '';
+  background-image: url('../img/icons/share-icon.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
 }
 /* ==========================================================================
    WORKS
@@ -707,6 +745,7 @@ p {
 .contact-form__submit:focus {
   background-color: #72848c;
   color: #141a20;
+  outline: none;
 }
 label.error {
   background-color: rgba(138, 65, 65, 0.5);
@@ -752,6 +791,10 @@ label.error:after {
 .social-icons a:last-child {
   margin-right: 0;
 }
-.social-icons a:hover {
+.social-icons a:hover,
+.social-icons a:active,
+.social-icons a:focus {
   color: #dfff2e;
+  outline: none;
+  text-decoration: none;
 }

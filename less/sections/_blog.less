@@ -2,7 +2,6 @@
    BLOG
    ========================================================================== */
 
-
 .blog-item {
 	position: relative;
 	width: 100%;
@@ -20,7 +19,7 @@
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 7px;
+	bottom: 0;
 	top: 6px;
 	z-index: 5;
 		
@@ -31,12 +30,24 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
 }
 
+.blog-item__link:hover .blog-item__post {
+	color: @hover-color;
+	.post__data {
+		&--date:before {
+    		background-image: url("../img/icons/time-icon-h.png");
+    	}
+    	&--comments:before {
+    		background-image: url("../img/icons/message-icon-h.png");
+    	}
+	}
+}
+
 .blog-item__post {
 	position: absolute;
 	bottom: 30px;
 	padding-left: 26px;
-	padding-right: 126px;
-	font-family: 'PT Sans Narrow', sans-serif;
+	padding-right: 100px;
+	font-family: 'PT Sans', sans-serif;
 	color: #fff;
 
 	h3 {
@@ -47,8 +58,10 @@
 	}
 
 	.post__data {
+		font-family: 'PT Sans Narrow', sans-serif;
 		display: inline-block;
 		font-size: 12px;
+		letter-spacing: 1px;
 		
 		position: relative;
 
@@ -88,6 +101,10 @@
 			position: absolute;
 			bottom: 0px;
 			left: -26px;
+		}
+
+		&--comments-num {
+			font-family: 'Open Sans', sans-serif;
 		}
 	}
 }

@@ -24,8 +24,10 @@
 			margin-right: 0;
 		}
 
-		&:hover {
-			color: #dfff2e;
+		&:hover, &:active, &:focus {
+			color: @hover-color;
+			outline:none;
+			text-decoration: none;
 		}
 	}
 }
