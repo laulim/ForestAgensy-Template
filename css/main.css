@@ -210,13 +210,13 @@ p {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+  outline: none;
 }
 .navigation__link:hover,
 .navigation__link:active,
 .navigation__link:focus {
   color: #dfff2e;
   text-decoration: none;
-  outline: none;
 }
 /* ==========================================================================
    SCROLL-DOWN-MOUSE
@@ -231,14 +231,21 @@ p {
   z-index: 9999;
   text-decoration: none;
   text-align: center;
+  outline: none;
 }
-#mouse-scroll:hover .mouse {
+#mouse-scroll:hover .mouse,
+#mouse-scroll:active .mouse,
+#mouse-scroll:focus .mouse {
   border: 1px solid #dfff2e;
 }
-#mouse-scroll:hover .mouse-in {
+#mouse-scroll:hover .mouse-in,
+#mouse-scroll:active .mouse-in,
+#mouse-scroll:focus .mouse-in {
   background: #dfff2e;
 }
-#mouse-scroll:hover .mouse-scroll-down {
+#mouse-scroll:hover .mouse-scroll-down,
+#mouse-scroll:active .mouse-scroll-down,
+#mouse-scroll:focus .mouse-scroll-down {
   color: #dfff2e;
 }
 #mouse-scroll .mouse {
@@ -472,12 +479,6 @@ p {
 .blog-item__link:hover .blog-item__post {
   color: #dfff2e;
 }
-.blog-item__link:hover .blog-item__post .post__data--date:before {
-  background-image: url("../img/icons/time-icon-h.png");
-}
-.blog-item__link:hover .blog-item__post .post__data--comments:before {
-  background-image: url("../img/icons/message-icon-h.png");
-}
 .blog-item__post {
   position: absolute;
   bottom: 30px;
@@ -485,6 +486,8 @@ p {
   padding-right: 100px;
   font-family: 'PT Sans', sans-serif;
   color: #fff;
+  -webkit-transition: color 0.4s ease-out;
+  transition: color 0.4s ease-out;
 }
 .blog-item__post h3 {
   font-size: 24px;
@@ -503,6 +506,10 @@ p {
   margin-right: 20px;
   margin-left: 22px;
 }
+.blog-item__post .post__data--comments {
+  margin-right: 10px;
+  margin-left: 26px;
+}
 .blog-item__post .post__data--date:before {
   display: inline-block;
   content: '';
@@ -514,10 +521,6 @@ p {
   position: absolute;
   bottom: 2px;
   left: -22px;
-}
-.blog-item__post .post__data--comments {
-  margin-right: 10px;
-  margin-left: 26px;
 }
 .blog-item__post .post__data--comments:before {
   display: inline-block;
@@ -787,6 +790,7 @@ label.error:after {
   text-decoration: none;
   color: #fff;
   font-size: 32px;
+  outline: none;
 }
 .social-icons a:last-child {
   margin-right: 0;
@@ -795,6 +799,5 @@ label.error:after {
 .social-icons a:active,
 .social-icons a:focus {
   color: #dfff2e;
-  outline: none;
   text-decoration: none;
 }
